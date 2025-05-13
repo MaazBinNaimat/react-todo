@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Analytics } from '@vercel/analytics/react';
+
 
 const App = () => {
   const [Title, setTitle] = useState("");
@@ -118,6 +120,7 @@ const App = () => {
           {renderTask}
         </ul>
       </div>
+      <Analytics />
     </>
   )
 }
