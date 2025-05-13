@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const App = () => {
@@ -120,7 +121,9 @@ const App = () => {
           {renderTask}
         </ul>
       </div>
+      {/* for vercel data fetching */}
       <Analytics />
+      <SpeedInsights/>
     </>
   )
 }
